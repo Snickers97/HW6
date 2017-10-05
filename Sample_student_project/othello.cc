@@ -3,6 +3,7 @@
 // November 23, 2015
 // Project7
 
+///This file, othello.cc is the implementation of the othello class, and inherits from the game class
 #include "othello.h"
 
 namespace main_savitch_14
@@ -202,7 +203,11 @@ void Othello::restart() {
   skips = 0;
   openSpots = 60;
 }
-
+/***************************************************
+* The is_legal function checks a move to see if that is in fact a legal move.
+* @param move a constant string passed by reference
+* @return boolean value determining if move is legal
+/***************************************************/
 bool Othello::is_legal(const string& move)const {
 
   int c, r;

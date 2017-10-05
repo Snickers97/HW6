@@ -3,6 +3,8 @@
 // November 23, 2015
 // Project7
 
+///This file is the declaration of the othello class
+
 #ifndef OTHELLO_H
 #define OTHELLO_H
 #include "game.h"
