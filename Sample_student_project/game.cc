@@ -1,5 +1,3 @@
-// File: game.cxx
-
 #include <cassert>    // Provides assert
 #include <climits>    // Provides INT_MAX and INT_MIN
 #include <iostream>   // Provides cin, cout
@@ -18,9 +16,15 @@ namespace main_savitch_14
 // PUBLIC MEMBER FUNCTIONS
 
 game::who game::play( )
-// The play function should not be overridden. It plays one round of the
-// game, with the human player moving first and the computer second.
-// The return value is the winner of the game (or NEUTRAL for a tie).
+/******************************************* 
+*The play function should not be overridden. It plays one round of the
+*game, with the human player moving first and the computer second.
+*The return value is the winner of the game (or NEUTRAL for a tie).
+*
+*@param No parameters
+*
+*@returns whos turn it is
+*******************************************/
 {
 	restart( );
 
@@ -45,6 +49,13 @@ game::who game::play( )
 //*************************************************************************
 // OPTIONAL VIRTUAL FUNCTIONS (overriding these functions is optional)
 
+/**************************************
+*The display_message const function displays instructions to the player
+*
+*@param message: a constant string passed by reference
+*
+*@returns No return value
+*********************************/
 void game::display_message(const string& message) const
 {
 	cout << message;
@@ -78,12 +89,16 @@ game::who game::winning()const {
 // PRIVATE FUNCTIONS (these are the same for every game)
 
 int game::eval_with_lookahead(int look_ahead, int beat_this)
-// Evaluate a board position with lookahead.
-// --int look_aheads:  How deep the lookahead should go to evaluate the move.
-// --int beat_this: Value of another move that we're considering. If the
-// current board position can't beat this, then cut it short.
-// The return value is large if the position is good for the player who just
-// moved.
+/*******************************************
+*Evaluate a board position with lookahead.
+*@param int look_aheads:  How deep the lookahead should go to evaluate the move.
+*
+*@param int beat_this: Value of another move that we're considering. If the
+*current board position can't beat this, then cut it short.
+*
+*The return value is large if the position is good for the player who just
+*moved.
+*********************************************/
 {
 	queue<string> moves;   // All possible opponent moves
 	int value;             // Value of a board position after opponent moves
