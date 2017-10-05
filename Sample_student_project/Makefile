@@ -1,7 +1,8 @@
 CC = g++
 CCFLAGS = -Wall -g
 
-all: build archive
+all: doc build archive
+	make doc
 	make build
 	make archive
 
@@ -10,6 +11,9 @@ archive:
 
 build: main.o game.o othello.o
 	$(CC) $(CCFLAGS) -o game main.o game.o othello.o 
+
+doc:
+	doxygen *.cc
 
 main.o: main.cc
 	$(CC) $(CCFLAGS) -c main.cc
@@ -21,4 +25,4 @@ othello.o: othello.cc othello.h
 	$(CC) $(CCFLAGS) -c othello.cc
 
 clean:
-	rm *.o game archive
+	rm *.o game archive -r latex -r html
