@@ -1,30 +1,30 @@
-//***********************************************************
-//
-//  File:     colors.h
-//
-//  Author:   Matthew Beldyk
-//  Email:    mb245002@ohiou.edu
-//
-//  Usage:    I created this file to house some names string
-//            constants with escape codes for colors in them
-//            this makes it much easier for me to do colors.
-//            I can still use the codes if I want, but this
-//            works too.  try the statement:
-//            cout<<BLUE<<"I like cookies"<<endl;
-//
-//		  You may use this whereever you want, but if you
-//		  make any large improvements or whatever, I am
-//		  curious, so email 'em my way, please.
-//
-//***********************************************************
-//
-//  all credit given to Matthew Beldyk for writing this file
-//  he gave me permission to try out in my programs
-//  just wanted to use to make everything look nice
-//
-//***********************************************************
+///***********************************************************
+///
+///  File:     colors.h
+///
+///  Author:   Matthew Beldyk
+///  Email:    mb245002@ohiou.edu
+///
+///  Usage:    I created this file to house some names string
+///            constants with escape codes for colors in them
+///            this makes it much easier for me to do colors.
+///            I can still use the codes if I want, but this
+///            works too.  try the statement:
+///            cout<<BLUE<<"I like cookies"<<endl;
+///
+///		  You may use this whereever you want, but if you
+///		  make any large improvements or whatever, I am
+///		  curious, so email 'em my way, please.
+///
+///***********************************************************
+///
+///  all credit given to Matthew Beldyk for writing this file
+///  he gave me permission to try out in my programs
+///  just wanted to use to make everything look nice
+///
+///***********************************************************
 
-//Edited by Jacob Handley 10/5/2017
+///Edited by Jacob Handley 10/5/2017
 ///This file provides colors that are used to display the game board
 
 #ifndef COLORS_H
@@ -33,11 +33,11 @@
 #include <string>
 using namespace std;
 
-const string BLINK     = "\e[5m";          //don't use this your
-					   //professor will probibly
-					   //beat you to death if
-					   //you do feel the need to
-					   //use blink!!!
+const string BLINK     = "\e[5m";          ///don't use this your
+					   ///professor will probibly
+					   ///beat you to death if
+					   ///you do feel the need to
+					   ///use blink!!!
 const string BOLD      = "\e[1m";
 
 const string RESET     = "\e[0m";
@@ -62,5 +62,5 @@ const string B_MAGENTA = "\e[45m";
 const string B_CYAN    = "\e[46m";
 const string B_WHITE   = "\e[47m";
 
-#endif //COLORS_H
+#endif ///COLORS_H
 

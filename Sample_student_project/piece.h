@@ -3,6 +3,8 @@
 // November 23, 2015
 // Project7
 
+///Provides the Piece class that determines behavior of game pieces
+
 #ifndef PIECE_H
 #define PIECE_H
 enum color {black, white, blank};
