@@ -11,7 +11,7 @@ using namespace main_savitch_14;
 
 int main()
 {
-	///Crgaeates an Othello class called theGame
+	///Creates an Othello class called theGame
 	Othello theGame;
 
 	///Resets the game and returns all pieces to the starting position
