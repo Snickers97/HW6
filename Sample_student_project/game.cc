@@ -141,6 +141,13 @@ int game::eval_with_lookahead(int look_ahead, int beat_this)
 }
 
 void game::make_computer_move( )
+/*******************************************
+*Find and make a valid move with lookahead.
+*
+*Calculates valid moves with compute_moves and
+*calculates the best moves with lookahead before
+*making the best move.
+*********************************************/
 {
 	queue<string> moves;
 	int value;
@@ -173,7 +180,15 @@ void game::make_computer_move( )
 	make_move(best_move);
 }
 
-void game::make_human_move( ) {
+void game::make_human_move( )
+/*******************************************
+*User input to make a move.
+*
+*Gets user input with get_user_move and checks
+*to see if the move is valid. If the move is
+*valid the move is made.
+*********************************************/
+{
 	string move;
 
 	move = get_user_move( );
