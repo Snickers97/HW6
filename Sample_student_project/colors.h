@@ -46,8 +46,8 @@ using namespace std;
 					   //professor will probibly
 					   //beat you to death if
 					   //you do feel the need to
-*/					   //use blink!!!
-//=======
+					   //use blink!!!
+=======*/
 const string BLINK     = "\e[5m";          ///don't use this your
 					   ///professor will probibly
 					   ///beat you to death if
