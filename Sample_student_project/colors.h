@@ -33,7 +33,7 @@
 #include <string>
 using namespace std;
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
 //! This file sets constants that can edit colors in the console
 /*!
 	Colors included: BLACK, RED, GREEN, YELLOW
@@ -42,18 +42,18 @@ using namespace std;
 	Options for border colors by adding B_ ex. B_BLACK
 */
 
-const string BLINK     = "\e[5m";          //don't use this your
+/*const string BLINK     = "\e[5m";          //don't use this your
 					   //professor will probibly
 					   //beat you to death if
 					   //you do feel the need to
-					   //use blink!!!
-=======
+*/					   //use blink!!!
+//=======
 const string BLINK     = "\e[5m";          ///don't use this your
 					   ///professor will probibly
 					   ///beat you to death if
 					   ///you do feel the need to
 					   ///use blink!!!
->>>>>>> e154f2b0455dc0110e5f7daa87b875c3aefb1693
+//>>>>>>> e154f2b0455dc0110e5f7daa87b875c3aefb1693
 const string BOLD      = "\e[1m";
 
 const string RESET     = "\e[0m";

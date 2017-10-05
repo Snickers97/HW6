@@ -1,10 +1,10 @@
 CC = g++
 CCFLAGS = -Wall -g
 
-all: doc build archive
+all: doc archive build
 	make doc
-	make build
 	make archive
+	make build
 
 archive:
 	tar -czf archive .
