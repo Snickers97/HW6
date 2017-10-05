@@ -11,12 +11,12 @@ using namespace main_savitch_14;
 
 int main()
 {
-	//Creates an Othello class called "theGame"
+	///Creates an Othello class called "theGame"
 	Othello theGame;
 
-	//Resets the game and returns all pieces to the starting position
+	///Resets the game and returns all pieces to the starting position
 	theGame.restart();
 
-	//Calls the loop that runs until the game is over
+	///Calls the loop that runs until the game is over
 	theGame.play();
 }
