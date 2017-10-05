@@ -24,6 +24,9 @@
 //
 //***********************************************************
 
+//Edited by Jacob Handley 10/5/2017
+///This file provides colors that are used to display the game board
+
 #ifndef COLORS_H
 #define COLORS_H
 
