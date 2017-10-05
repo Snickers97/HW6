@@ -7,10 +7,22 @@
 #define PIECE_H
 enum color {black, white, blank};
 
+//! piece class
+/*!
+	This class stores the information for an individual piece
+	on the othello board, which is created as a two-dimensional
+	array in the othello class.
+*/
 class piece {
 public:
 	piece() {theColor = blank;}
 
+//! flip function
+/*!
+	Changes the private variable theColor to either black or white.
+	In the game display, this will change the color of the piece and
+	give a point to the other player.
+*/
 	void flip()
 	{
 		if (theColor == white) {

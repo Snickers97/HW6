@@ -30,6 +30,14 @@
 #include <string>
 using namespace std;
 
+//! This file sets constants that can edit colors in the console
+/*!
+	Colors included: BLACK, RED, GREEN, YELLOW
+			 BLUE, MAGENTA, CYAN, WHITE
+	Blink and Bold settings
+	Options for border colors by adding B_ ex. B_BLACK
+*/
+
 const string BLINK     = "\e[5m";          //don't use this your
 					   //professor will probibly
 					   //beat you to death if
