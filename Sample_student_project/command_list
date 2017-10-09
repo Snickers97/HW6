@@ -1,0 +1,10 @@
+List of git commands used:
+git clone
+git pull
+git push
+git commit -m
+git status
+git log --stat
+git tag
+git add
+
